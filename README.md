@@ -81,3 +81,30 @@ This file represents the **reliable, synthesized performance reference** generat
 -   Compare the original data from each individual ADAS against this fused result.
 -   Calculate performance metrics such as Mean Squared Error (MSE), Mean Absolute Error (MAE), and bias to quantify how much each individual system deviates from the more reliable fused benchmark.
 -   This analysis will allow you to quantitatively assess the performance and stability of each ADAS device, achieving the main goal of the project.
+
+## 6. Materials, Methods, and Limitations
+
+This section provides additional details regarding the experimental setup and scope of the study.
+
+### Computing Infrastructure
+The model was trained and evaluated on the following infrastructure:
+- **Operating System:** Ubuntu 20.04
+- **GPU:** NVIDIA GeForce RTX 2080 Ti
+- **CPU:** Intel(R) Xeon(R) Gold 6136 CPU @ 3.00GHz (48 Cores)
+- **Architecture:** x86_64
+- **RAM:** 64 GB
+- **Software:** Python 3.8, PyTorch 1.12.1, CUDA 11.3
+
+### Dataset Availability
+The raw street scene video data used for this study has been made publicly available in a separate repository. It can be accessed at:
+[https://github.com/liumou998/data.git](https://github.com/liumou998/data.git)
+
+The processed numerical data (`.txt` and `.npy` files) used as direct input for the model can be generated from this raw video data by following the acquisition and parsing steps described in our paper.
+
+
+### Conclusions & Limitations
+While our approach demonstrates strong performance, it is important to acknowledge its limitations:
+- **Generalization to Unseen Devices:** The model was trained on data from a specific set of eight ADAS devices. Its performance on data from entirely new, unseen ADAS hardware has not been validated.
+- **Scenario and Condition Coverage:** The dataset was collected under clear weather and good lighting conditions. The model's robustness in adverse conditions such as heavy rain, snow, fog, or low-light environments requires further investigation.
+- **Dependency on Input Quality:** As a self-supervised method, the quality of the fused output is inherently linked to the quality of the input data. In scenarios where both source ADAS systems provide highly erroneous or correlated-error data, the fusion result may be compromised.
+- **Vision-Only Modality:** This study is focused exclusively on vision-based ADAS systems. The framework does not incorporate other sensor modalities like Radar or LiDAR, which could provide complementary information, especially in challenging weather conditions.
