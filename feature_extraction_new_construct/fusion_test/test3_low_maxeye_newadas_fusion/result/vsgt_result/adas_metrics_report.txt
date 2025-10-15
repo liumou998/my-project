@@ -1,0 +1,50 @@
+================================================================================
+ADAS特征评估指标报告
+================================================================================
+
+数据信息:
+- 地面真值(GT): 15
+- ADAS1特征文件: /home/linux/ShenGang/feature_extraction_new_construct/fusion_test/test3_low_maxeye_newadas_fusion/feature/maxeye_feature/reduce6167_features.npy
+- ADAS2特征文件: /home/linux/ShenGang/feature_extraction_new_construct/fusion_test/test3_low_maxeye_newadas_fusion/feature/new_adas_feature/reduce6167_features.npy
+- 融合特征文件: /home/linux/ShenGang/feature_extraction_new_construct/fusion_test/test3_low_maxeye_newadas_fusion/fusion_test11/fusion_features/fused_feature_real.npy
+
+数据维度信息:
+- ADAS1特征形状: (6167, 1)
+- ADAS2特征形状: (6167, 1)
+- 融合特征形状: (6167, 1)
+
+表1: 与地面真值(GT)比较的评估指标
+----------------------------------------------------------------------------------------------------
+系统                    MSE      RMSE       MAE   MAPE(%)      Bias        R²         r      RSTD     MaxAE
+----------------------------------------------------------------------------------------------------
+ADAS1              3.4587    1.8597    1.5380     10.25    1.4156    0.0000       nan    1.2061    3.6694
+ADAS2              3.3667    1.8349    1.4801      9.87    1.4717    0.0000       nan    1.0958    5.9989
+融合结果               1.2818    1.1321    1.1321      7.55    1.1321    0.0000       nan    0.0000    1.1321
+----------------------------------------------------------------------------------------------------
+
+
+指标说明:
+- MSE: 均方误差，越小越好
+- RMSE: 均方根误差，越小越好
+- MAE: 平均绝对误差，越小越好
+- MAPE: 平均绝对百分比误差，越小越好
+- Bias: 偏差，绝对值越小越好
+- R²: 决定系数，越接近1越好
+- r: Pearson相关系数，越接近1越好
+- RSTD: 残差标准差，越小越好
+- MaxAE: 最大绝对误差，越小越好
+
+
+结论:
+根据评估指标，融合结果在大多数指标上表现最佳。
+- MSE指标: 融合结果表现最佳
+- RMSE指标: 融合结果表现最佳
+- MAE指标: 融合结果表现最佳
+- MAPE指标: 融合结果表现最佳
+- BIAS指标: 融合结果表现最佳
+- R²指标: 融合结果表现最佳
+- RSTD指标: 融合结果表现最佳
+- MAXAE指标: 融合结果表现最佳
+
+
+报告生成时间: 2025-04-16 15:40:52

@@ -1,0 +1,54 @@
+================================================================================
+ADAS特征评估指标报告
+================================================================================
+
+数据信息:
+- 地面真值(GT): 15.0
+- ADAS1特征文件: /home/linux/ShenGang/feature_extraction_new_construct/e2e_fusion_result/maxeye_JMS3_fusion/maxeye_reduce6167_features.npy
+- ADAS2特征文件: /home/linux/ShenGang/feature_extraction_new_construct/e2e_fusion_result/maxeye_motovis/motovis_train_features_6167.npy
+- ADAS3特征文件: /home/linux/ShenGang/feature_extraction_new_construct/e2e_fusion_result/maxeye_JMS3_fusion/JMS3_adjusted_data_6167.npy
+- 融合特征文件: /home/linux/ShenGang/feature_extraction_new_construct/e2e_fusion_result/maxeye_motovis/fused_15.65.npy
+
+数据维度信息:
+- ADAS1特征形状: (6167, 1)
+- ADAS2特征形状: (6167, 1)
+- ADAS3特征形状: (6167, 1)
+- 融合特征形状: (6167, 1)
+
+表1: 评估指标
+----------------------------------------------------------------------------------------------------
+比较组                        MSE      RMSE       MAE   MAPE(%)      Bias        R²         r      RSTD     MaxAE
+----------------------------------------------------------------------------------------------------
+GT vs ADAS3             3.3498    1.8303    1.4972      9.98    1.4969    0.0000       nan    1.0531    5.8397
+ADAS3 vs ADAS1          2.5760    1.6050    1.3174      7.98   -0.0813   -1.3227   -0.0022    1.6029    6.1269
+ADAS3 vs ADAS2         20.3571    4.5119    4.0883     24.49   -4.0813  -17.3549    0.0136    1.9236   10.1056
+ADAS3 vs 融合结果           3.1717    1.7809    1.4246      8.48   -0.8471   -1.8598    0.0309    1.5666   17.4739
+----------------------------------------------------------------------------------------------------
+
+
+指标说明:
+- MSE: 均方误差，越小越好
+- RMSE: 均方根误差，越小越好
+- MAE: 平均绝对误差，越小越好
+- MAPE: 平均绝对百分比误差，越小越好
+- Bias: 偏差，绝对值越小越好
+- R²: 决定系数，越接近1越好
+- r: Pearson相关系数，越接近1越好
+- RSTD: 残差标准差，越小越好
+- MaxAE: 最大绝对误差，越小越好
+
+
+结论:
+根据评估指标，ADAS3 vs ADAS1在大多数指标上表现最佳。
+- MSE指标: ADAS3 vs ADAS1表现最佳
+- RMSE指标: ADAS3 vs ADAS1表现最佳
+- MAE指标: ADAS3 vs ADAS1表现最佳
+- MAPE指标: ADAS3 vs ADAS1表现最佳
+- BIAS指标: ADAS3 vs ADAS1表现最佳
+- R²指标: GT vs ADAS3表现最佳
+- R指标: ADAS3 vs 融合结果表现最佳
+- RSTD指标: GT vs ADAS3表现最佳
+- MAXAE指标: GT vs ADAS3表现最佳
+
+
+报告生成时间: 2025-08-23 12:04:30

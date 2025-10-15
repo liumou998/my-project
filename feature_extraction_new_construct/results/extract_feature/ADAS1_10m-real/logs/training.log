@@ -1,0 +1,65 @@
+2025-01-09 16:33:12,207 - 开始特征提取任务
+2025-01-09 16:33:12,207 - 正在加载数据...
+2025-01-09 16:33:12,334 - 初始化模型...
+2025-01-09 16:33:12,359 - 开始训练模型...
+2025-01-09 16:33:12,364 - ============== 训练开始 ==============
+2025-01-09 16:33:12,365 - 总epoch数: 50
+2025-01-09 16:33:12,365 - 批大小: 16
+2025-01-09 16:33:12,365 - 学习率: 0.0001
+2025-01-09 16:33:12,365 - 使用设备: cpu
+2025-01-09 16:33:12,365 - =====================================
+2025-01-09 16:33:17,925 - Epoch [1/50] Feature Loss: 6.212721 GT Loss: 69.107752 Total Loss: 12.502224
+2025-01-09 16:33:23,328 - Epoch [2/50] Feature Loss: 5.928043 GT Loss: 9.839863 Total Loss: 6.319225
+2025-01-09 16:33:28,575 - Epoch [3/50] Feature Loss: 5.399204 GT Loss: 0.737571 Total Loss: 4.933040
+2025-01-09 16:33:33,850 - Epoch [4/50] Feature Loss: 2.086355 GT Loss: 0.777012 Total Loss: 1.955421
+2025-01-09 16:33:38,879 - Epoch [5/50] Feature Loss: 0.925173 GT Loss: 0.123371 Total Loss: 0.844993
+2025-01-09 16:33:43,866 - Epoch [6/50] Feature Loss: 0.798384 GT Loss: 0.005596 Total Loss: 0.719106
+2025-01-09 16:33:48,863 - Epoch [7/50] Feature Loss: 0.781704 GT Loss: 0.002757 Total Loss: 0.703810
+2025-01-09 16:33:53,856 - Epoch [8/50] Feature Loss: 0.766423 GT Loss: 0.002855 Total Loss: 0.690067
+2025-01-09 16:33:58,859 - Epoch [9/50] Feature Loss: 0.751298 GT Loss: 0.001591 Total Loss: 0.676327
+2025-01-09 16:34:03,844 - Epoch [10/50] Feature Loss: 0.736626 GT Loss: 0.000533 Total Loss: 0.663017
+2025-01-09 16:34:08,830 - Epoch [11/50] Feature Loss: 0.723891 GT Loss: 0.000146 Total Loss: 0.651517
+2025-01-09 16:34:13,824 - Epoch [12/50] Feature Loss: 0.718272 GT Loss: 0.000044 Total Loss: 0.646450
+2025-01-09 16:34:18,878 - Epoch [13/50] Feature Loss: 0.713836 GT Loss: 0.000028 Total Loss: 0.642455
+2025-01-09 16:34:23,930 - Epoch [14/50] Feature Loss: 0.709259 GT Loss: 0.000028 Total Loss: 0.638336
+2025-01-09 16:34:28,902 - Epoch [15/50] Feature Loss: 0.704614 GT Loss: 0.000021 Total Loss: 0.634155
+2025-01-09 16:34:33,891 - Epoch [16/50] Feature Loss: 0.699878 GT Loss: 0.000016 Total Loss: 0.629892
+2025-01-09 16:34:38,882 - Epoch [17/50] Feature Loss: 0.695062 GT Loss: 0.000013 Total Loss: 0.625557
+2025-01-09 16:34:43,875 - Epoch [18/50] Feature Loss: 0.690167 GT Loss: 0.000013 Total Loss: 0.621151
+2025-01-09 16:34:48,869 - Epoch [19/50] Feature Loss: 0.685155 GT Loss: 0.000011 Total Loss: 0.616640
+2025-01-09 16:34:53,865 - Epoch [20/50] Feature Loss: 0.680079 GT Loss: 0.000010 Total Loss: 0.612072
+2025-01-09 16:34:58,856 - Epoch [21/50] Feature Loss: 0.674923 GT Loss: 0.000010 Total Loss: 0.607432
+2025-01-09 16:35:03,866 - Epoch [22/50] Feature Loss: 0.669711 GT Loss: 0.000008 Total Loss: 0.602741
+2025-01-09 16:35:08,847 - Epoch [23/50] Feature Loss: 0.664397 GT Loss: 0.000009 Total Loss: 0.597958
+2025-01-09 16:35:13,840 - Epoch [24/50] Feature Loss: 0.659027 GT Loss: 0.000007 Total Loss: 0.593125
+2025-01-09 16:35:18,836 - Epoch [25/50] Feature Loss: 0.653532 GT Loss: 0.000006 Total Loss: 0.588179
+2025-01-09 16:35:23,833 - Epoch [26/50] Feature Loss: 0.648085 GT Loss: 0.000007 Total Loss: 0.583277
+2025-01-09 16:35:28,833 - Epoch [27/50] Feature Loss: 0.642479 GT Loss: 0.000006 Total Loss: 0.578232
+2025-01-09 16:35:33,855 - Epoch [28/50] Feature Loss: 0.636706 GT Loss: 0.000005 Total Loss: 0.573036
+2025-01-09 16:35:38,841 - Epoch [29/50] Feature Loss: 0.631102 GT Loss: 0.000005 Total Loss: 0.567992
+2025-01-09 16:35:43,843 - Epoch [30/50] Feature Loss: 0.625315 GT Loss: 0.000005 Total Loss: 0.562784
+2025-01-09 16:35:48,907 - Epoch [31/50] Feature Loss: 0.619481 GT Loss: 0.000005 Total Loss: 0.557534
+2025-01-09 16:35:53,902 - Epoch [32/50] Feature Loss: 0.613602 GT Loss: 0.000006 Total Loss: 0.552242
+2025-01-09 16:35:58,923 - Epoch [33/50] Feature Loss: 0.607694 GT Loss: 0.000005 Total Loss: 0.546925
+2025-01-09 16:36:03,928 - Epoch [34/50] Feature Loss: 0.601726 GT Loss: 0.000006 Total Loss: 0.541554
+2025-01-09 16:36:08,928 - Epoch [35/50] Feature Loss: 0.595708 GT Loss: 0.000004 Total Loss: 0.536137
+2025-01-09 16:36:13,947 - Epoch [36/50] Feature Loss: 0.589649 GT Loss: 0.000004 Total Loss: 0.530684
+2025-01-09 16:36:18,925 - Epoch [37/50] Feature Loss: 0.583503 GT Loss: 0.000005 Total Loss: 0.525154
+2025-01-09 16:36:23,933 - Epoch [38/50] Feature Loss: 0.577203 GT Loss: 0.000004 Total Loss: 0.519483
+2025-01-09 16:36:28,933 - Epoch [39/50] Feature Loss: 0.571062 GT Loss: 0.000005 Total Loss: 0.513956
+2025-01-09 16:36:33,969 - Epoch [40/50] Feature Loss: 0.564756 GT Loss: 0.000004 Total Loss: 0.508281
+2025-01-09 16:36:38,976 - Epoch [41/50] Feature Loss: 0.558406 GT Loss: 0.000003 Total Loss: 0.502566
+2025-01-09 16:36:44,035 - Epoch [42/50] Feature Loss: 0.552027 GT Loss: 0.000005 Total Loss: 0.496825
+2025-01-09 16:36:49,027 - Epoch [43/50] Feature Loss: 0.545603 GT Loss: 0.000004 Total Loss: 0.491043
+2025-01-09 16:36:54,034 - Epoch [44/50] Feature Loss: 0.539137 GT Loss: 0.000003 Total Loss: 0.485224
+2025-01-09 16:36:59,044 - Epoch [45/50] Feature Loss: 0.532608 GT Loss: 0.000006 Total Loss: 0.479347
+2025-01-09 16:37:04,069 - Epoch [46/50] Feature Loss: 0.526028 GT Loss: 0.000004 Total Loss: 0.473426
+2025-01-09 16:37:09,047 - Epoch [47/50] Feature Loss: 0.519434 GT Loss: 0.000004 Total Loss: 0.467491
+2025-01-09 16:37:14,038 - Epoch [48/50] Feature Loss: 0.512821 GT Loss: 0.000003 Total Loss: 0.461540
+2025-01-09 16:37:19,030 - Epoch [49/50] Feature Loss: 0.506134 GT Loss: 0.000004 Total Loss: 0.455521
+2025-01-09 16:37:24,027 - Epoch [50/50] Feature Loss: 0.499361 GT Loss: 0.000003 Total Loss: 0.449426
+2025-01-09 16:37:24,027 - 加载最佳模型...
+2025-01-09 16:37:24,028 - 提取特征...
+2025-01-09 16:37:24,033 - 保存特征...
+2025-01-09 16:37:24,270 - 特征提取完成！
+2025-01-09 16:37:24,270 - 训练特征形状: (84480, 2)

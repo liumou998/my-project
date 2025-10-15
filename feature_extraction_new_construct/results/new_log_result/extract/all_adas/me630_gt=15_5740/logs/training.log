@@ -1,0 +1,115 @@
+2025-03-13 10:12:56,228 - 开始特征提取任务
+2025-03-13 10:12:56,228 - 正在加载数据...
+2025-03-13 10:12:56,249 - 初始化模型...
+2025-03-13 10:12:56,273 - 开始训练模型...
+2025-03-13 10:12:56,278 - ============== 训练开始 ==============
+2025-03-13 10:12:56,278 - 总epoch数: 100
+2025-03-13 10:12:56,278 - 批大小: 16
+2025-03-13 10:12:56,279 - 学习率: 0.0001
+2025-03-13 10:12:56,279 - 使用设备: cpu
+2025-03-13 10:12:56,279 - =====================================
+2025-03-13 10:12:56,940 - Epoch [1/100] Feature Loss: 112.384718 GT Loss: 217.661123 Total Loss: 143.967642 Error Rate: 100.00%
+2025-03-13 10:12:57,601 - Epoch [2/100] Feature Loss: 111.216766 GT Loss: 215.682019 Total Loss: 142.556343 Error Rate: 100.00%
+2025-03-13 10:12:58,170 - Epoch [3/100] Feature Loss: 109.903801 GT Loss: 213.587891 Total Loss: 141.009030 Error Rate: 100.00%
+2025-03-13 10:12:58,710 - Epoch [4/100] Feature Loss: 108.298993 GT Loss: 211.000558 Total Loss: 139.109463 Error Rate: 100.00%
+2025-03-13 10:12:59,261 - Epoch [5/100] Feature Loss: 106.315300 GT Loss: 207.845178 Total Loss: 136.774264 Error Rate: 100.00%
+2025-03-13 10:12:59,800 - Epoch [6/100] Feature Loss: 103.930778 GT Loss: 204.152334 Total Loss: 133.997246 Error Rate: 100.00%
+2025-03-13 10:13:00,347 - Epoch [7/100] Feature Loss: 101.274932 GT Loss: 200.056794 Total Loss: 130.909492 Error Rate: 100.00%
+2025-03-13 10:13:00,898 - Epoch [8/100] Feature Loss: 98.168111 GT Loss: 195.624508 Total Loss: 127.405031 Error Rate: 100.00%
+2025-03-13 10:13:01,443 - Epoch [9/100] Feature Loss: 94.865450 GT Loss: 190.906090 Total Loss: 123.677643 Error Rate: 100.00%
+2025-03-13 10:13:01,985 - Epoch [10/100] Feature Loss: 91.308226 GT Loss: 186.015960 Total Loss: 119.720548 Error Rate: 100.00%
+2025-03-13 10:13:02,528 - Epoch [11/100] Feature Loss: 87.590184 GT Loss: 180.931898 Total Loss: 115.592700 Error Rate: 100.00%
+2025-03-13 10:13:03,081 - Epoch [12/100] Feature Loss: 83.485707 GT Loss: 175.161510 Total Loss: 110.988450 Error Rate: 100.00%
+2025-03-13 10:13:03,622 - Epoch [13/100] Feature Loss: 79.545431 GT Loss: 169.746538 Total Loss: 106.605765 Error Rate: 100.00%
+2025-03-13 10:13:04,166 - Epoch [14/100] Feature Loss: 74.879867 GT Loss: 164.308762 Total Loss: 101.708537 Error Rate: 100.00%
+2025-03-13 10:13:04,708 - Epoch [15/100] Feature Loss: 70.161521 GT Loss: 158.799226 Total Loss: 96.752833 Error Rate: 99.90%
+2025-03-13 10:13:05,253 - Epoch [16/100] Feature Loss: 64.852686 GT Loss: 153.179284 Total Loss: 91.350666 Error Rate: 99.79%
+2025-03-13 10:13:05,802 - Epoch [17/100] Feature Loss: 59.494038 GT Loss: 147.487349 Total Loss: 85.892033 Error Rate: 99.39%
+2025-03-13 10:13:06,341 - Epoch [18/100] Feature Loss: 53.651663 GT Loss: 141.734302 Total Loss: 80.076455 Error Rate: 98.59%
+2025-03-13 10:13:06,880 - Epoch [19/100] Feature Loss: 47.193055 GT Loss: 135.930849 Total Loss: 73.814394 Error Rate: 94.30%
+2025-03-13 10:13:07,423 - Epoch [20/100] Feature Loss: 38.417216 GT Loss: 130.095073 Total Loss: 65.920575 Error Rate: 78.55%
+2025-03-13 10:13:07,968 - Epoch [21/100] Feature Loss: 32.007709 GT Loss: 124.233246 Total Loss: 59.675371 Error Rate: 68.22%
+2025-03-13 10:13:08,512 - Epoch [22/100] Feature Loss: 26.259021 GT Loss: 118.355100 Total Loss: 53.887846 Error Rate: 55.45%
+2025-03-13 10:13:09,055 - Epoch [23/100] Feature Loss: 21.309975 GT Loss: 112.490878 Total Loss: 48.664248 Error Rate: 45.30%
+2025-03-13 10:13:09,600 - Epoch [24/100] Feature Loss: 16.934872 GT Loss: 106.618620 Total Loss: 43.839998 Error Rate: 36.89%
+2025-03-13 10:13:10,147 - Epoch [25/100] Feature Loss: 13.383840 GT Loss: 100.794213 Total Loss: 39.606953 Error Rate: 29.13%
+2025-03-13 10:13:10,696 - Epoch [26/100] Feature Loss: 11.455821 GT Loss: 95.009808 Total Loss: 36.522018 Error Rate: 24.15%
+2025-03-13 10:13:11,238 - Epoch [27/100] Feature Loss: 9.596952 GT Loss: 89.284964 Total Loss: 33.503356 Error Rate: 20.09%
+2025-03-13 10:13:11,781 - Epoch [28/100] Feature Loss: 8.599153 GT Loss: 83.631809 Total Loss: 31.108951 Error Rate: 18.38%
+2025-03-13 10:13:12,323 - Epoch [29/100] Feature Loss: 7.385851 GT Loss: 78.064212 Total Loss: 28.589360 Error Rate: 15.30%
+2025-03-13 10:13:12,870 - Epoch [30/100] Feature Loss: 6.667249 GT Loss: 72.595912 Total Loss: 26.445848 Error Rate: 13.35%
+2025-03-13 10:13:13,408 - Epoch [31/100] Feature Loss: 5.751507 GT Loss: 67.240520 Total Loss: 24.198212 Error Rate: 11.15%
+2025-03-13 10:13:13,951 - Epoch [32/100] Feature Loss: 5.679282 GT Loss: 62.011577 Total Loss: 22.578971 Error Rate: 10.65%
+2025-03-13 10:13:14,494 - Epoch [33/100] Feature Loss: 5.455929 GT Loss: 56.922606 Total Loss: 20.895932 Error Rate: 10.04%
+2025-03-13 10:13:15,035 - Epoch [34/100] Feature Loss: 5.292236 GT Loss: 51.989261 Total Loss: 19.301344 Error Rate: 9.91%
+2025-03-13 10:13:15,576 - Epoch [35/100] Feature Loss: 5.388350 GT Loss: 47.220675 Total Loss: 17.938048 Error Rate: 10.25%
+2025-03-13 10:13:16,118 - Epoch [36/100] Feature Loss: 4.948332 GT Loss: 42.629657 Total Loss: 16.252730 Error Rate: 9.11%
+2025-03-13 10:13:16,660 - Epoch [37/100] Feature Loss: 5.166450 GT Loss: 38.233501 Total Loss: 15.086565 Error Rate: 9.64%
+2025-03-13 10:13:17,201 - Epoch [38/100] Feature Loss: 5.160631 GT Loss: 34.042340 Total Loss: 13.825144 Error Rate: 9.64%
+2025-03-13 10:13:17,743 - Epoch [39/100] Feature Loss: 5.038742 GT Loss: 30.067936 Total Loss: 12.547501 Error Rate: 9.44%
+2025-03-13 10:13:18,288 - Epoch [40/100] Feature Loss: 4.844659 GT Loss: 26.321357 Total Loss: 11.287669 Error Rate: 8.85%
+2025-03-13 10:13:18,830 - Epoch [41/100] Feature Loss: 5.097737 GT Loss: 22.812837 Total Loss: 10.412267 Error Rate: 9.39%
+2025-03-13 10:13:19,373 - Epoch [42/100] Feature Loss: 5.053481 GT Loss: 19.551592 Total Loss: 9.402914 Error Rate: 9.57%
+2025-03-13 10:13:19,916 - Epoch [43/100] Feature Loss: 4.754252 GT Loss: 16.545656 Total Loss: 8.291673 Error Rate: 8.66%
+2025-03-13 10:13:20,460 - Epoch [44/100] Feature Loss: 4.685266 GT Loss: 13.801620 Total Loss: 7.420172 Error Rate: 8.68%
+2025-03-13 10:13:21,005 - Epoch [45/100] Feature Loss: 4.874463 GT Loss: 11.324328 Total Loss: 6.809423 Error Rate: 9.01%
+2025-03-13 10:13:21,551 - Epoch [46/100] Feature Loss: 4.694251 GT Loss: 9.116545 Total Loss: 6.020939 Error Rate: 8.78%
+2025-03-13 10:13:22,096 - Epoch [47/100] Feature Loss: 4.786741 GT Loss: 7.178583 Total Loss: 5.504294 Error Rate: 8.71%
+2025-03-13 10:13:22,642 - Epoch [48/100] Feature Loss: 4.830138 GT Loss: 5.507841 Total Loss: 5.033449 Error Rate: 9.03%
+2025-03-13 10:13:23,183 - Epoch [49/100] Feature Loss: 4.569070 GT Loss: 4.098251 Total Loss: 4.427824 Error Rate: 8.31%
+2025-03-13 10:13:23,725 - Epoch [50/100] Feature Loss: 4.702922 GT Loss: 2.939771 Total Loss: 4.173977 Error Rate: 8.61%
+2025-03-13 10:13:24,268 - Epoch [51/100] Feature Loss: 4.786325 GT Loss: 2.017792 Total Loss: 3.955765 Error Rate: 8.73%
+2025-03-13 10:13:24,814 - Epoch [52/100] Feature Loss: 4.672925 GT Loss: 1.312733 Total Loss: 3.664867 Error Rate: 8.83%
+2025-03-13 10:13:25,361 - Epoch [53/100] Feature Loss: 4.468942 GT Loss: 0.799831 Total Loss: 3.368209 Error Rate: 8.15%
+2025-03-13 10:13:25,904 - Epoch [54/100] Feature Loss: 4.211379 GT Loss: 0.449525 Total Loss: 3.082823 Error Rate: 7.49%
+2025-03-13 10:13:26,454 - Epoch [55/100] Feature Loss: 4.233273 GT Loss: 0.228657 Total Loss: 3.031888 Error Rate: 7.60%
+2025-03-13 10:13:27,000 - Epoch [56/100] Feature Loss: 4.353382 GT Loss: 0.102823 Total Loss: 3.078214 Error Rate: 7.67%
+2025-03-13 10:13:27,547 - Epoch [57/100] Feature Loss: 4.222280 GT Loss: 0.039733 Total Loss: 2.967516 Error Rate: 7.63%
+2025-03-13 10:13:28,092 - Epoch [58/100] Feature Loss: 4.169661 GT Loss: 0.012757 Total Loss: 2.922590 Error Rate: 7.48%
+2025-03-13 10:13:28,638 - Epoch [59/100] Feature Loss: 4.276323 GT Loss: 0.003273 Total Loss: 2.994408 Error Rate: 7.72%
+2025-03-13 10:13:29,181 - Epoch [60/100] Feature Loss: 3.991131 GT Loss: 0.000641 Total Loss: 2.793984 Error Rate: 6.99%
+2025-03-13 10:13:29,722 - Epoch [61/100] Feature Loss: 4.082769 GT Loss: 0.000091 Total Loss: 2.857965 Error Rate: 7.11%
+2025-03-13 10:13:30,263 - Epoch [62/100] Feature Loss: 4.153070 GT Loss: 0.000009 Total Loss: 2.907152 Error Rate: 7.42%
+2025-03-13 10:13:30,805 - Epoch [63/100] Feature Loss: 4.310292 GT Loss: 0.000001 Total Loss: 3.017205 Error Rate: 7.72%
+2025-03-13 10:13:31,347 - Epoch [64/100] Feature Loss: 3.961435 GT Loss: 0.000000 Total Loss: 2.773005 Error Rate: 7.04%
+2025-03-13 10:13:31,888 - Epoch [65/100] Feature Loss: 4.130360 GT Loss: 0.000000 Total Loss: 2.891252 Error Rate: 7.34%
+2025-03-13 10:13:32,429 - Epoch [66/100] Feature Loss: 3.951317 GT Loss: 0.000000 Total Loss: 2.765922 Error Rate: 7.02%
+2025-03-13 10:13:32,974 - Epoch [67/100] Feature Loss: 3.970549 GT Loss: 0.000000 Total Loss: 2.779384 Error Rate: 6.99%
+2025-03-13 10:13:33,523 - Epoch [68/100] Feature Loss: 3.829966 GT Loss: 0.000000 Total Loss: 2.680976 Error Rate: 6.66%
+2025-03-13 10:13:34,070 - Epoch [69/100] Feature Loss: 4.197095 GT Loss: 0.000000 Total Loss: 2.937967 Error Rate: 7.53%
+2025-03-13 10:13:34,609 - Epoch [70/100] Feature Loss: 3.980243 GT Loss: 0.000000 Total Loss: 2.786170 Error Rate: 6.97%
+2025-03-13 10:13:35,149 - Epoch [71/100] Feature Loss: 4.117372 GT Loss: 0.000000 Total Loss: 2.882161 Error Rate: 7.42%
+2025-03-13 10:13:35,704 - Epoch [72/100] Feature Loss: 4.039275 GT Loss: 0.000000 Total Loss: 2.827492 Error Rate: 7.04%
+2025-03-13 10:13:36,245 - Epoch [73/100] Feature Loss: 3.803086 GT Loss: 0.000000 Total Loss: 2.662160 Error Rate: 6.74%
+2025-03-13 10:13:36,792 - Epoch [74/100] Feature Loss: 3.833744 GT Loss: 0.000000 Total Loss: 2.683621 Error Rate: 6.73%
+2025-03-13 10:13:37,335 - Epoch [75/100] Feature Loss: 3.978543 GT Loss: 0.000000 Total Loss: 2.784980 Error Rate: 7.11%
+2025-03-13 10:13:37,876 - Epoch [76/100] Feature Loss: 3.800099 GT Loss: 0.000000 Total Loss: 2.660069 Error Rate: 6.76%
+2025-03-13 10:13:38,417 - Epoch [77/100] Feature Loss: 3.870361 GT Loss: 0.000000 Total Loss: 2.709253 Error Rate: 6.78%
+2025-03-13 10:13:38,958 - Epoch [78/100] Feature Loss: 3.643721 GT Loss: 0.000000 Total Loss: 2.550604 Error Rate: 6.27%
+2025-03-13 10:13:39,500 - Epoch [79/100] Feature Loss: 3.714742 GT Loss: 0.000000 Total Loss: 2.600320 Error Rate: 6.46%
+2025-03-13 10:13:40,041 - Epoch [80/100] Feature Loss: 3.772333 GT Loss: 0.000000 Total Loss: 2.640633 Error Rate: 6.62%
+2025-03-13 10:13:40,580 - Epoch [81/100] Feature Loss: 3.687972 GT Loss: 0.000000 Total Loss: 2.581580 Error Rate: 6.48%
+2025-03-13 10:13:41,121 - Epoch [82/100] Feature Loss: 3.789193 GT Loss: 0.000000 Total Loss: 2.652435 Error Rate: 6.74%
+2025-03-13 10:13:41,664 - Epoch [83/100] Feature Loss: 3.764782 GT Loss: 0.000000 Total Loss: 2.635348 Error Rate: 6.50%
+2025-03-13 10:13:42,203 - Epoch [84/100] Feature Loss: 3.807631 GT Loss: 0.000000 Total Loss: 2.665342 Error Rate: 6.85%
+2025-03-13 10:13:42,744 - Epoch [85/100] Feature Loss: 3.515006 GT Loss: 0.000000 Total Loss: 2.460504 Error Rate: 6.03%
+2025-03-13 10:13:43,283 - Epoch [86/100] Feature Loss: 3.584181 GT Loss: 0.000000 Total Loss: 2.508926 Error Rate: 6.27%
+2025-03-13 10:13:43,823 - Epoch [87/100] Feature Loss: 3.454451 GT Loss: 0.000000 Total Loss: 2.418116 Error Rate: 5.82%
+2025-03-13 10:13:44,367 - Epoch [88/100] Feature Loss: 3.618823 GT Loss: 0.000000 Total Loss: 2.533176 Error Rate: 6.43%
+2025-03-13 10:13:44,912 - Epoch [89/100] Feature Loss: 3.490434 GT Loss: 0.000000 Total Loss: 2.443304 Error Rate: 5.98%
+2025-03-13 10:13:45,451 - Epoch [90/100] Feature Loss: 3.568695 GT Loss: 0.000000 Total Loss: 2.498087 Error Rate: 6.19%
+2025-03-13 10:13:45,991 - Epoch [91/100] Feature Loss: 3.567519 GT Loss: 0.000000 Total Loss: 2.497263 Error Rate: 6.22%
+2025-03-13 10:13:46,531 - Epoch [92/100] Feature Loss: 3.643239 GT Loss: 0.000000 Total Loss: 2.550267 Error Rate: 6.43%
+2025-03-13 10:13:47,072 - Epoch [93/100] Feature Loss: 3.414172 GT Loss: 0.000000 Total Loss: 2.389921 Error Rate: 5.56%
+2025-03-13 10:13:47,618 - Epoch [94/100] Feature Loss: 3.419101 GT Loss: 0.000000 Total Loss: 2.393371 Error Rate: 5.82%
+2025-03-13 10:13:48,162 - Epoch [95/100] Feature Loss: 3.604604 GT Loss: 0.000000 Total Loss: 2.523223 Error Rate: 6.29%
+2025-03-13 10:13:48,708 - Epoch [96/100] Feature Loss: 3.663063 GT Loss: 0.000000 Total Loss: 2.564144 Error Rate: 6.41%
+2025-03-13 10:13:49,250 - Epoch [97/100] Feature Loss: 3.524684 GT Loss: 0.000000 Total Loss: 2.467279 Error Rate: 6.08%
+2025-03-13 10:13:49,792 - Epoch [98/100] Feature Loss: 3.444551 GT Loss: 0.000000 Total Loss: 2.411186 Error Rate: 5.77%
+2025-03-13 10:13:50,338 - Epoch [99/100] Feature Loss: 3.522799 GT Loss: 0.000000 Total Loss: 2.465959 Error Rate: 6.08%
+2025-03-13 10:13:50,882 - Epoch [100/100] Feature Loss: 3.299862 GT Loss: 0.000000 Total Loss: 2.309903 Error Rate: 5.56%
+2025-03-13 10:13:50,882 - 加载最佳模型...
+2025-03-13 10:13:50,885 - 提取特征...
+2025-03-13 10:13:50,894 - 保存特征...
+2025-03-13 10:13:50,915 - 特征提取完成！
+2025-03-13 10:13:50,915 - 训练特征形状: (5739, 1)

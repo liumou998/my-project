@@ -1,0 +1,60 @@
+================================================================================
+ADAS特征评估指标报告
+================================================================================
+
+数据信息:
+- ADAS1特征文件: /home/linux/ShenGang/feature_extraction_new_construct/fusion_test/test1_mix_maxeye_motivis_fusion/featuere/maxeye_feature/reduce6167_features.npy
+- ADAS2特征文件: /home/linux/ShenGang/feature_extraction_new_construct/fusion_test/test1_mix_maxeye_motivis_fusion/featuere/motovis_feature/reduced_6167_feature.npy
+- ADAS3特征文件 (GT参考): /home/linux/ShenGang/feature_extraction_new_construct/fusion_test/test1_mix_maxeye_motivis_fusion/featuere/jms2_feature/reduce6167_features.npy
+- 融合特征文件: /home/linux/ShenGang/feature_extraction_new_construct/fusion_test/test1_mix_maxeye_motivis_fusion/fusion_test11/fusion_features/jms2_test_reduced_feature.npy
+
+数据维度信息:
+- ADAS1特征形状: (6167, 1)
+- ADAS2特征形状: (6167, 1)
+- ADAS3特征形状: (6167, 1)
+- 融合特征形状: (6167, 1)
+
+表1: 原始评估指标
+--------------------------------------------------------------------------------
+比较组                   MSE      RMSE       MAE   MAPE(%)      Bias        R²         r      RSTD     MaxAE
+--------------------------------------------------------------------------------
+ADAS3 vs ADAS1     7.2638    2.6951    2.1942     16.18    1.7875   -1.7286    0.0122    2.0171    6.1679
+ADAS3 vs ADAS2    10.1103    3.1797    2.6588     17.60   -2.2093   -2.7979    0.0131    2.2868    7.2199
+ADAS3 vs 融合结果      2.8313    1.6827    1.3899     10.16    0.4114   -0.0636       nan    1.6316    2.9363
+--------------------------------------------------------------------------------
+
+表2: 融合特征相对于各ADAS的改进百分比
+--------------------------------------------------------------------------------
+比较类型                       MSE      RMSE       MAE      MAPE      BIAS        R2         R      RSTD     MAXAE
+--------------------------------------------------------------------------------
+相对ADAS1改进(%)            61.02*    37.57*    36.66*    37.17*    76.99*    96.32*       N/A    19.11*    52.39*
+相对ADAS2改进(%)            72.00*    47.08*    47.73*    42.26*    81.38*    97.73*       N/A    28.65*    59.33*
+平均改进率(%)                66.51*    42.32*    42.19*    39.72*    79.18*    97.03*       N/A    23.88*    55.86*
+相对最佳单一ADAS改进(%)         61.02*    37.57*    36.66*    37.17*    76.99*    96.32*       N/A    19.11*    52.39*
+--------------------------------------------------------------------------------
+
+指标说明:
+- MSE: 均方误差，越小越好
+- RMSE: 均方根误差，越小越好
+- MAE: 平均绝对误差，越小越好
+- MAPE: 平均绝对百分比误差，越小越好
+- Bias: 偏差，绝对值越小越好
+- R²: 决定系数，越接近1越好
+- r: Pearson相关系数，越接近1越好
+- RSTD: 残差标准差，越小越好
+- MaxAE: 最大绝对误差，越小越好
+
+注: 带星号(*) 的值表示融合特征相对于对应ADAS有正向改进
+
+改进率评估结论:
+1. 相对ADAS1改进的指标: MSE, RMSE, MAE, MAPE, BIAS, R2, RSTD, MAXAE
+2. 相对ADAS2改进的指标: MSE, RMSE, MAE, MAPE, BIAS, R2, RSTD, MAXAE
+3. 平均正向改进的指标: MSE, RMSE, MAE, MAPE, BIAS, R2, RSTD, MAXAE
+4. 相对最佳单一ADAS改进的指标: MSE, RMSE, MAE, MAPE, BIAS, R2, RSTD, MAXAE
+
+总体评估结论:
+融合特征整体表现优于单一ADAS特征，平均改进率为 55.84%。
+最显著的改进是在相对ADAS2改进(%)的R2指标上，改进了97.73%。
+
+
+报告生成时间: 2025-04-17 10:52:49

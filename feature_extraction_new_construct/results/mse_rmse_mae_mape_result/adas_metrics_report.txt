@@ -1,0 +1,55 @@
+================================================================================
+ADAS特征评估指标报告
+================================================================================
+
+数据信息:
+- ADAS1特征文件: /home/linux/ShenGang/feature_extraction_new_construct/results/new_log_result/extract/all_adas/minieye_gt=15_5162/features/train_features.npy
+- ADAS2特征文件: /home/linux/ShenGang/feature_extraction_new_construct/results/new_log_result/extract/all_adas/motivis_gt=15_6168/features/reduce5161_features.npy
+- ADAS3特征文件 (GT参考): /home/linux/ShenGang/feature_extraction_new_construct/results/new_log_result/extract/all_adas/jms2_gt=15_6168/features/reduce5161_features.npy
+- 融合特征文件: /home/linux/ShenGang/feature_extraction_new_construct/results/new_log_result/fusion/minieye_motovis_fusion/fusion_test11/fusion_features/fused_feature_real.npy
+
+数据维度信息:
+- ADAS1特征形状: (5161, 1)
+- ADAS2特征形状: (5161, 1)
+- ADAS3特征形状: (5161, 1)
+- 融合特征形状: (5161, 1)
+
+表1: 原始评估指标
+--------------------------------------------------------------------------------
+比较组                   MSE      RMSE       MAE   MAPE(%)      Bias        R²         r      RSTD     MaxAE
+--------------------------------------------------------------------------------
+ADAS3 vs ADAS1     6.4474    2.5392    2.1310     14.07   -1.5625   -1.4387    0.0062    2.0015    6.6177
+ADAS3 vs ADAS2    10.2128    3.1957    2.6645     17.62   -2.2203   -2.8629    0.0015    2.2985    7.2573
+ADAS3 vs 融合结果      4.6309    2.1520    1.8795     12.26   -1.4097   -0.7516       nan    1.6260    4.1922
+--------------------------------------------------------------------------------
+
+表2: 融合特征相对于最佳单一ADAS的改进百分比
+--------------------------------------------------------------------------------
+最佳单一ADAS的指标值:
+指标值                6.4474    2.5392    2.1310   14.0744   -1.5625   -1.4387    0.0062    2.0015    6.6177
+--------------------------------------------------------------------------------
+改进百分比(%)           28.17*    15.25*    11.80*    12.92*     9.78*    47.76*       N/A    18.76*    36.65*
+
+指标说明:
+- MSE: 均方误差，越小越好
+- RMSE: 均方根误差，越小越好
+- MAE: 平均绝对误差，越小越好
+- MAPE: 平均绝对百分比误差，越小越好
+- Bias: 偏差，绝对值越小越好
+- R²: 决定系数，越接近1越好
+- r: Pearson相关系数，越接近1越好
+- RSTD: 残差标准差，越小越好
+- MaxAE: 最大绝对误差，越小越好
+
+注: 带星号(*) 的值表示融合特征相对于最佳单一ADAS有正向改进
+
+结论评估:
+融合特征整体表现优于单一ADAS特征。
+- 改进的指标: MSE, RMSE, MAE, MAPE, BIAS, R2, RSTD, MAXAE
+- 未改进的指标: 
+
+总结:
+融合特征在R2指标上表现最佳，改进了47.76%。
+
+
+报告生成时间: 2025-04-07 15:22:29
