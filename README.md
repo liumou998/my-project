@@ -8,7 +8,7 @@ The core objective is to generate a reliable performance benchmark by fusing dat
 
 The model is a single, end-to-end network that integrates feature extraction and multi-stage fusion into one seamless architecture.
 
-
+![Model Architecture](iamge/model.png)
 *Fig. 1: The end-to-end multi-source fusion network architecture.*
 
 The network is composed of three main logical components:
@@ -21,8 +21,7 @@ The network is composed of three main logical components:
 
 It is crucial to understand the data pipeline for this project. The model does not process images directly. Instead, it works with numerical data derived from specialized hardware. The complete data acquisition workflow is illustrated below.
 
-***(Please replace `path/to/your/data_pipeline.png` with the actual path to your data flow image)***
-![Data Acquisition Pipeline](path/to/your/data_pipeline.png)
+![Data Acquisition Pipeline](iamge/data.png)
 *Fig. 2: The data acquisition and preparation workflow.*
 
 The workflow can be summarized in the following steps:
