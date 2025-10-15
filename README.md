@@ -101,6 +101,9 @@ The raw street scene video data used for this study has been made publicly avail
 
 The processed numerical data (`.txt` and `.npy` files) used as direct input for the model can be generated from this raw video data by following the acquisition and parsing steps described in our paper.
 
+### Funder Disclosure
+The funding sources provided support for the procurement of the ADAS devices and data acquisition equipment used in this study. The funders had no role in the study design, data collection and analysis, decision to publish, or preparation of the manuscript.
+
 
 ### Conclusions & Limitations
 While our approach demonstrates strong performance, it is important to acknowledge its limitations:
