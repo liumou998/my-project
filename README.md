@@ -26,7 +26,7 @@ Raw CAN bus messages from ADAS devices are transformed into standardized, time-c
 2.  **Frame Synchronization**: Aligns data streams from different sources based on timestamps.
 3.  **Data Standardization**: Normalizes and formats the data into fixed-dimension vectors suitable for the neural network.
 
-![Data Preprocessing Pipeline](images/data.png)
+![Data Preprocessing Pipeline](iamge/data.png)
 *Fig. 1: The data preprocessing workflow.*
 
 ### Multi-source Multi-stage Fusion Network
@@ -35,7 +35,7 @@ The core of our method is a deep learning network designed to fuse features from
 -   **Feature Extraction Module**: Two parallel encoders (with unshared weights) map the heterogeneous ADAS input vectors into a unified, compact representation space.
 -   **Multi-stage Fusion Module**: A three-stage progressive fusion process integrates the feature representations. Each stage refines the features through modality-specific transformations, cross-modal information exchange, and residual connections, ensuring a comprehensive fusion.
 
-![Model Architecture](images/model.png)
+![Model Architecture](iamge/model.png)
 *Fig. 2: The architecture of the proposed fusion network.*
 
 ## 2. Repository Structure
