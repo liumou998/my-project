@@ -60,23 +60,19 @@ The entire pipeline can be executed using the `train_e2e.py` script. Follow thes
 
 ## 5. Performance Analysis and Evaluation (Testing)
 
-This section describes how to use the generated fusion result as a benchmark to quantitatively evaluate the performance of the original ADAS systems. The evaluation logic is contained within the `some_py/` directory.
+This section describes how to use the generated fusion result as a benchmark to quantitatively evaluate the performance of the original ADAS systems.
 
-### How to Evaluate
+### Evaluation Steps
 
-1.  **Prerequisites**: Before proceeding, ensure you have successfully run the training and fusion pipeline as described in Section 4. This evaluation step requires the output files generated in the `e2e_self_supervised_results` directory.
+1.  **Prerequisites**: Ensure you have successfully run the training and fusion pipeline as described in Section 4. The evaluation requires the output `.npy` files from the `e2e_self_supervised_results` directory.
 
-2.  **Run the Evaluation Script**: The performance metrics are calculated by a script located inside the `some_py` folder. To run the evaluation, execute the main script from that directory. For example, if the main script is named `main.py`, the command would be:
-    ```bash
-    python some_py/main.py
-    ```
-    *Note: Please replace `main.py` with the actual name of the executable script inside the `some_py` folder. The script is designed to automatically load the required `.npy` files and compute the performance metrics.*
+2.  **Evaluation Scripts**: All scripts required for the final performance analysis are located in the **`some_py/`** directory. These scripts are designed to load the output files from the previous step and compute various performance metrics. Please refer to the scripts within this directory to conduct the final analysis.
 
-3.  **Interpreting the Output**: The script will compare each raw ADAS signal against the fused benchmark and print a performance report to the console. This report may include metrics such as:
+3.  **Evaluation Metrics**: By executing these scripts, you can obtain a quantitative report comparing each raw ADAS signal against the fused benchmark. The analysis typically includes metrics such as:
     *   **Mean Squared Error (MSE)**
     *   **Mean Absolute Error (MAE)**
     *   **Root Mean Squared Error (RMSE)**
-    *   **Bias**
+    *   ... etc.
 
 This quantitative analysis allows you to objectively assess the accuracy and reliability of each individual ADAS device.
 
