@@ -101,19 +101,32 @@ For GPU acceleration, please install a version of PyTorch that matches your syst
 
 ## 5. Usage Instructions
 
-### Step 1: Training and Fusion
+### Step 1: End-to-End Fusion
 
-This step trains the fusion model on two ADAS data sources and generates a fused benchmark output.
+This step trains the end-to-end model and generates the fused benchmark output in a single run.
 
 1.  **Configure Data Paths**: Open the `config.py` file. In the `end_to_end` section, set the `data_path` for `adas1` and `adas2` to point to the desired input files (e.g., the provided sample data).
 
-2.  **Run the Training/Fusion Script**: Execute the following command from the project's root directory.
+2.  **Run the Fusion Script**: Execute the following command from the project's root directory.
     ```bash
-    python train_e2e.py --mode train_extract
+    python train_e2e.py --mode fusion
     ```
 
 3.  **Check the Output**: After the script finishes, the fused result (`fused_feature.npy`) and other relevant files will be saved in the `e2e_self_supervised_results/` directory.
 
 ### Step 2: Performance Evaluation
 
-This step uses the fused benchmark generated i
+This step uses the fused benchmark generated in Step 1 to evaluate the performance of an under-test ADAS device.
+
+1.  **Prerequisites**: Ensure you have successfully run Step 1.
+
+2.  **Run Evaluation Script**: The scripts in the `some_py/` directory are used for analysis. For example, to compute performance metrics (MSE, MAE, etc.) against the fused benchmark, you can run:
+    ```bash
+    python some_py/evaluate_performance.py
+    ```
+    *(Note: You may need to adjust the file paths inside the evaluation script to load the correct files.)*
+
+3.  **Expected Output**: The script will print a quantitative report comparing the raw ADAS signals to the fused benchmark, allowing for an objective performance assessment.
+
+## 6. License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
