@@ -14,10 +14,7 @@ This project addresses the critical challenge of validating the performance of r
 - [3. Dataset Information](#3-dataset-information)
 - [4. Setup and Installation](#4-setup-and-installation)
 - [5. Usage Instructions](#5-usage-instructions)
-  - [Step 1: Training and Fusion](#step-1-training-and-fusion)
-  - [Step 2: Performance Evaluation](#step-2-performance-evaluation)
-- [6. Citing Our Work](#6-citing-our-work)
-- [7. License](#7-license)
+- [6. License](#6-license)
 
 ## 1. Model Architecture & Methodology
 
@@ -29,7 +26,7 @@ Raw CAN bus messages from ADAS devices are transformed into standardized, time-c
 2.  **Frame Synchronization**: Aligns data streams from different sources based on timestamps.
 3.  **Data Standardization**: Normalizes and formats the data into fixed-dimension vectors suitable for the neural network.
 
-![Data Preprocessing Pipeline](iamge/data.png)
+![Data Preprocessing Pipeline](images/data.png)
 *Fig. 1: The data preprocessing workflow.*
 
 ### Multi-source Multi-stage Fusion Network
@@ -38,7 +35,7 @@ The core of our method is a deep learning network designed to fuse features from
 -   **Feature Extraction Module**: Two parallel encoders (with unshared weights) map the heterogeneous ADAS input vectors into a unified, compact representation space.
 -   **Multi-stage Fusion Module**: A three-stage progressive fusion process integrates the feature representations. Each stage refines the features through modality-specific transformations, cross-modal information exchange, and residual connections, ensuring a comprehensive fusion.
 
-![Model Architecture](iamge/model.png)
+![Model Architecture](images/model.png)
 *Fig. 2: The architecture of the proposed fusion network.*
 
 ## 2. Repository Structure
@@ -46,7 +43,10 @@ The core of our method is a deep learning network designed to fuse features from
 ```
 my-project/
 │
-├── iamge/                      # Contains images for the README
+├── images/                     # Contains images for the README
+│   ├── data.png
+│   └── model.png
+│
 ├── data/                       # Directory for input data
 │   └── sample/
 │       ├── adas1_sample_data.txt
@@ -116,29 +116,4 @@ This step trains the fusion model on two ADAS data sources and generates a fused
 
 ### Step 2: Performance Evaluation
 
-This step uses the fused benchmark generated in Step 1 to evaluate the performance of an under-test ADAS device.
-
-1.  **Prerequisites**: Ensure you have successfully run Step 1.
-
-2.  **Run Evaluation Script**: The scripts in the `some_py/` directory are used for analysis. For example, to compute performance metrics (MSE, MAE, etc.) against the fused benchmark, you can run:
-    ```bash
-    python some_py/evaluate_performance.py
-    ```
-    *(Note: You may need to adjust the file paths inside the evaluation script to load the correct files.)*
-
-3.  **Expected Output**: The script will print a quantitative report comparing the raw ADAS signals to the fused benchmark, allowing for an objective performance assessment.
-
-## 6. Citing Our Work
-If you use this code or our methodology in your research, please consider citing our paper:
-```bibtex
-@inproceedings{han2025progressive,
-  title={A Progressive Fusion Architecture for Validating Distance Estimation in Aftermarket ADAS Installations},
-  author={Han, Gangtao and Shen, Gang and Wang, Song and Pan, Gaofeng and Du, Changhao},
-  booktitle={IEEE Conference Proceedings},
-  year={2025}
-}
-```
-*(Note: Please update the citation details, such as `booktitle` and `year`, once the paper is officially published.)*
-
-## 7. License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+This step uses the fused benchmark generated i
