@@ -41,20 +41,45 @@ The workflow can be summarized in the following steps:
 3.  **Data Extraction**: Each device outputs its results (like object distance, type, etc.) as messages on a CAN (Controller Area Network) bus. These messages are captured and decoded.
 4.  **Input for this Code**: The final decoded data is saved as `.txt` files, which serve as the raw input for the data preparation stage of this project.
 
-## 3. Environment Setup
+## 3. Requirements and Installation
 
-To run this project, you need to install the necessary Python libraries.
+This project is built using Python 3.8. We highly recommend using a virtual environment (such as `conda` or `venv`) to manage dependencies.
 
-1.  It is recommended to create a virtual environment.
-2.  Install the required packages. You can create a `requirements.txt` file with the following content:
+**Dependencies:**
+- Python 3.8+
+- PyTorch >= 1.10.0
+- NumPy >= 1.21.0
+- Pandas >= 1.3.0
+
+**Installation Steps:**
+
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/liumou998/my-project.git
+    cd my-project
     ```
-    torch
-    numpy
-    pandas
-    ```
-    Then, install them with:
+
+2.  **Create and activate a virtual environment (Recommended):**
+    *   Using `conda`:
+        ```bash
+        conda create -n adas-fusion python=3.8
+        conda activate adas-fusion
+        ```
+    *   Using `venv`:
+        ```bash
+        python -m venv venv
+        source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+        ```
+
+3.  **Install the required packages:**
+    All dependencies are listed in the `requirements.txt` file. Install them with a single command:
     ```bash
     pip install -r requirements.txt
+    ```
+
+4.  **(GPU Support)** To leverage a CUDA-enabled GPU, ensure your PyTorch installation matches your system's CUDA version. You can find the correct installation command on the [official PyTorch website](https://pytorch.org/get-started/locally/). For example, for CUDA 11.3:
+    ```bash
+    pip install torch==1.12.1+cu113 torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu113
     ```
 
 ## 4. How to Run the Pipeline
